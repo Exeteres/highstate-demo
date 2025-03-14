@@ -1,0 +1,17 @@
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.nx
+
+dist
+bin
+coverage
+node_modules
+
+.devenv
+.devenv.flake.nix

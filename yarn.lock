@@ -29,11 +29,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@highstate/backend@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/backend@npm:0.6.2"
+"@highstate/apps@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/apps@npm:0.7.0"
   dependencies:
-    "@highstate/contract": "npm:^0.6.2"
+    "@highstate/cert-manager": "npm:^0.7.0"
+    "@highstate/common": "npm:^0.7.0"
+    "@highstate/contract": "npm:^0.7.0"
+    "@highstate/gateway-api": "npm:^0.7.0"
+    "@highstate/k8s": "npm:^0.7.0"
+    "@highstate/pulumi": "npm:^0.7.0"
+    "@highstate/restic": "npm:^0.7.0"
+    "@pulumi/command": "npm:^1.0.2"
+    "@pulumi/kubernetes": "npm:^4.18.0"
+    "@pulumi/pulumi": "npm:^3.152.0"
+    deepmerge-ts: "npm:^7.1.5"
+    remeda: "npm:^2.21.0"
+  peerDependencies:
+    "@highstate/library": "workspace:^0.4.4"
+  checksum: 10c0/6e131f996aa4f98b0f44d3699dab029d5f97820a556b634fb9b1a85eec5412a2ad7536fcdbd5c643f26f44265c30a34fcd65975741432498cb2b48547245138c
+  languageName: node
+  linkType: hard
+
+"@highstate/backend@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/backend@npm:0.7.0"
+  dependencies:
+    "@highstate/contract": "npm:^0.7.0"
     "@types/node": "npm:^22.10.1"
     ajv: "npm:^8.17.1"
     better-lock: "npm:^3.2.0"
@@ -58,13 +80,13 @@ __metadata:
       optional: true
     classic-level:
       optional: true
-  checksum: 10c0/71e67848fcb62e0b5abdaf4b9f2b0bdbb8a0aa86ea9a4bad321072f9407db23faf676ad4b0f2872cd2a84d481c4f28022e2a6422045648a231adaeb7a9913c92
+  checksum: 10c0/212eaae887ce05459674e56a4b82b49286150d88d5b58576b5312b077727d736f44148e9ada641401cfff7035c1c04f5caac7e0eb3838d963d37fdabd637533f
   languageName: node
   linkType: hard
 
-"@highstate/cert-manager@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/cert-manager@npm:0.6.2"
+"@highstate/cert-manager@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/cert-manager@npm:0.7.0"
   dependencies:
     "@pulumi/kubernetes": "npm:4.18.0"
     "@pulumi/pulumi": "npm:^3.25.0"
@@ -74,13 +96,13 @@ __metadata:
     node-fetch: "npm:^2.3.0"
     shell-quote: "npm:^1.6.1"
     tmp: "npm:^0.0.33"
-  checksum: 10c0/a5338483b17510ccc69f2c2ed85efb7140129e136347486497f67c8e18110609877d1651615d1419ed38dde72a845930130e86b44c150703dced41fb55e28357
+  checksum: 10c0/bb23971d5f59814aa1e38495f0c5fc3f6847ed752a5c3d0f0500b74babaa935218cec8f9ccce7a2944e47fbbb0aa3feff207edb41ae66dfb860f83430ae55b51
   languageName: node
   linkType: hard
 
-"@highstate/cilium-crds@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/cilium-crds@npm:0.6.2"
+"@highstate/cilium-crds@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/cilium-crds@npm:0.7.0"
   dependencies:
     "@pulumi/kubernetes": "npm:4.18.0"
     "@pulumi/pulumi": "npm:^3.25.0"
@@ -90,76 +112,76 @@ __metadata:
     node-fetch: "npm:^2.3.0"
     shell-quote: "npm:^1.6.1"
     tmp: "npm:^0.0.33"
-  checksum: 10c0/99d4a89c0eb61d8fe00409e54c6f8e1269d1c22c7825dd1942a4103b030d80d50c80657aed6485774de1259bec4e96f88d1aab6c91d7e72cabe14ca3e772a410
+  checksum: 10c0/8fdd01c85a57ff7ca9123a6c5ac1049ae0c0ffcc892e6cd9c009820c19f93649763a826dc6812855751c5a75c8e0061d9166e5678fb8fe9892b48518e48b660b
   languageName: node
   linkType: hard
 
-"@highstate/cilium@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/cilium@npm:0.6.2"
+"@highstate/cilium@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/cilium@npm:0.7.0"
   dependencies:
-    "@highstate/cilium-crds": "npm:^0.6.2"
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
+    "@highstate/cilium-crds": "npm:^0.7.0"
+    "@highstate/k8s": "npm:^0.7.0"
+    "@highstate/pulumi": "npm:^0.7.0"
     "@pulumi/command": "npm:^1.0.2"
     "@pulumi/kubernetes": "npm:^4.18.0"
     "@pulumi/pulumi": "npm:^3.152.0"
     remeda: "npm:^2.21.0"
   peerDependencies:
     "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/9473951d79f988bcdcf9e083a836428de4296f3daae5b6c9a21dc0748baee485e6c83f64f10c5c301110bcd7de4a44189e61845cfe5cb1ae21545fe47be3e6a7
+  checksum: 10c0/27fdbb484794cb96cb370d8839828d79eca9d6c6abf18b107572f3151c0ce457c481d708db73061e3185335eeae3867d698891a497ee988c88792be180f15b04
   languageName: node
   linkType: hard
 
-"@highstate/cli@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/cli@npm:0.6.2"
+"@highstate/cli@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/cli@npm:0.7.0"
   dependencies:
-    "@highstate/backend": "npm:^0.6.2"
+    "@highstate/backend": "npm:^0.7.0"
     consola: "npm:^3.4.0"
   bin:
     highstate: dist/main.js
-  checksum: 10c0/85f938e67ebe1368450094bb5280dfec45e057b98e4b2115550c07dae8f1bc89bca7ca80296eb55247693c5a37b758e19144b17d571a11e0d1d743ed6066bf02
+  checksum: 10c0/17dfb7a1bb6725bbf2e4d4e2da52bb631e7c713060a5d445b0191e80ff21500592bf09fb17d3c6b6bf1a74f5b5fb2447a65a004b562121e562f003ee0ea5d149
   languageName: node
   linkType: hard
 
-"@highstate/common@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/common@npm:0.6.2"
+"@highstate/common@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/common@npm:0.7.0"
   dependencies:
-    "@highstate/pulumi": "npm:^0.6.2"
+    "@highstate/pulumi": "npm:^0.7.0"
     "@noble/hashes": "npm:^1.7.1"
     "@pulumi/command": "npm:^1.0.2"
     micro-key-producer: "npm:^0.7.3"
   peerDependencies:
     "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/df48dd577c484e8e2a68fc5b17cda41f8ec55176dda076bc19407c5937c7e4b19483ff917265a2df525394ea87395bbd6525922fddf524226f78f441cd6d407f
+  checksum: 10c0/23af195991d2001f76e1981953f0986d79eae1466c5eeba5ac82df5a56a08d9e61c4a7e77c9514028767c36e51e75ddc5a325b2f1c4506eaa5dd451275006037
   languageName: node
   linkType: hard
 
-"@highstate/contract@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/contract@npm:0.6.2"
+"@highstate/contract@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/contract@npm:0.7.0"
   dependencies:
     "@sinclair/typebox": "npm:^0.34.11"
     remeda: "npm:^2.21.0"
-  checksum: 10c0/b1449ee64f6d6f95e01893010189d8dc40ea3de77a331441147b9e441407ff610c2a15ebcba245d0a387bbc74b3848564892b110f59fe5cff706ccf05fde8018
+  checksum: 10c0/cc3413f18d419487b3d1ead2bef0af607e137a2a545c7765738359f54a692f08cda0eed40b0c2e3719885390f3a1ef96ea095cc72092a6cfc67d872f1359e74d
   languageName: node
   linkType: hard
 
-"@highstate/designer@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/designer@npm:0.6.2"
+"@highstate/designer@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/designer@npm:0.7.0"
   peerDependencies:
     "@highstate/backend": ^0.4.5
     "@highstate/contract": ^0.4.5
-  checksum: 10c0/73b3975a8e84337a2a4668160e9edd3694d2fc3aaf1a1af687fcdef31ce68085cc89e86a0d2ea39a83b8565554b45a366b54f5bee6bf684cbc7975ed550e7711
+  checksum: 10c0/d4b5b620c1c9e3ec3148b6505dc7973d668805db27828f60d2fe26d8a1478b2a587a7512fe482095ff65d4e87528c8d4c1b50809b11e24437fd511090cb57ec8
   languageName: node
   linkType: hard
 
-"@highstate/gateway-api@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/gateway-api@npm:0.6.2"
+"@highstate/gateway-api@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/gateway-api@npm:0.7.0"
   dependencies:
     "@pulumi/kubernetes": "npm:4.18.0"
     "@pulumi/pulumi": "npm:^3.25.0"
@@ -169,187 +191,115 @@ __metadata:
     node-fetch: "npm:^2.3.0"
     shell-quote: "npm:^1.6.1"
     tmp: "npm:^0.0.33"
-  checksum: 10c0/12f843276b91d0b9dba18a1adf0f8fa7b67a30efa782584868a36b5f5a26cf45c24605f27f64a8890bfa515c006cec356ed70f8be5fb8ef35905db65337d41b9
+  checksum: 10c0/800e1ff09fe980e90885d4a8f1e3d4496704eecafa5578c0ef2920348a617690c90f4159c6e32e4de653ad83828fab05529c34c8384f27d9d6981c170fdab585
   languageName: node
   linkType: hard
 
-"@highstate/k8s@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/k8s@npm:0.6.2"
+"@highstate/k8s@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/k8s@npm:0.7.0"
   dependencies:
-    "@highstate/cert-manager": "npm:^0.6.2"
-    "@highstate/common": "npm:^0.6.2"
-    "@highstate/contract": "npm:^0.6.2"
-    "@highstate/gateway-api": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
+    "@highstate/cert-manager": "npm:^0.7.0"
+    "@highstate/common": "npm:^0.7.0"
+    "@highstate/contract": "npm:^0.7.0"
+    "@highstate/gateway-api": "npm:^0.7.0"
+    "@highstate/pulumi": "npm:^0.7.0"
     "@pulumi/command": "npm:^1.0.2"
     "@pulumi/kubernetes": "npm:^4.18.0"
     "@pulumi/pulumi": "npm:^3.152.0"
+    crypto-hash: "npm:^3.1.0"
     deepmerge-ts: "npm:^7.1.5"
+    glob: "npm:^11.0.1"
+    nano-spawn: "npm:^0.2.0"
     remeda: "npm:^2.21.0"
   peerDependencies:
     "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/5d90fe3998ce8ff5dd7838d5182677eee55154e0cd3b7d7af8d17d61627c0105d98e7894aa0da334e8a24546a0c733754e92f5667875e5463c0beff426fc6fae
+  checksum: 10c0/5a3161b150bfa7634879c1c5b1b9483faff81a29bc65af71cedda87b51c3a644250621f3a018129c45f47c9f69ef1c2d4d8d41cb75383745e2f07850abd68e19
   languageName: node
   linkType: hard
 
-"@highstate/kubernetes-dashboard@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/kubernetes-dashboard@npm:0.6.2"
+"@highstate/library@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/library@npm:0.7.0"
   dependencies:
-    "@highstate/common": "npm:^0.6.2"
-    "@highstate/contract": "npm:^0.6.2"
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
-    "@pulumi/kubernetes": "npm:^4.18.0"
-  peerDependencies:
-    "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/819b9d5788142c3a9bf7232999b12f626bc20f7d4c4b76125e34dcc57f5be47e2581af1085e6a37585d48227dc7bda2b579c78599f66ff776942c0dbe772b4e2
-  languageName: node
-  linkType: hard
-
-"@highstate/library@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/library@npm:0.6.2"
-  dependencies:
-    "@highstate/contract": "npm:^0.6.2"
+    "@highstate/contract": "npm:^0.7.0"
     "@sinclair/typebox": "npm:^0.34.11"
     ip-cidr: "npm:^4.0.2"
     remeda: "npm:^2.21.0"
-  checksum: 10c0/80be64137a09a2e747ec995398986b49fc66822110ca433da76cfbd30d75d4b8d5af4c4cd02cd3e3e7ab2f968c841552f1dc311f63781af7e692ab5a78016d15
+  checksum: 10c0/430ed5fb3818309dd9c236de98da95933cf53fb0c8ba158f2d6fc7be1e976ea02dbfeea035a743da1d3a5448e06d0a9077b3a2337eefc590ddb78a58de30d467
   languageName: node
   linkType: hard
 
-"@highstate/mariadb@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/mariadb@npm:0.6.2"
+"@highstate/proxmox@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/proxmox@npm:0.7.0"
   dependencies:
-    "@highstate/common": "npm:^0.6.2"
-    "@highstate/contract": "npm:^0.6.2"
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
-    "@highstate/restic": "npm:^0.6.2"
-    "@pulumi/kubernetes": "npm:^4.18.0"
-  peerDependencies:
-    "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/84802405b1fc258dd88e42d5fadd72f118881e74784113217e7f26f53d1775b25acd7bfb09f0ebe2064ab8430031d526ade43a11bc18b6aee964119b422f3f7e
-  languageName: node
-  linkType: hard
-
-"@highstate/postgresql@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/postgresql@npm:0.6.2"
-  dependencies:
-    "@highstate/common": "npm:^0.6.2"
-    "@highstate/contract": "npm:^0.6.2"
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
-    "@highstate/restic": "npm:^0.6.2"
-    "@pulumi/kubernetes": "npm:^4.18.0"
-  peerDependencies:
-    "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/482b879c5b48c687fa6ecf868168a5956d6747a1b2057b7b4980f4d3913304a31896d21f338ab3356f57fdd2b9d5234367ed0a6014997fcfbce5ee43ef1b3a9d
-  languageName: node
-  linkType: hard
-
-"@highstate/proxmox@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/proxmox@npm:0.6.2"
-  dependencies:
-    "@highstate/pulumi": "npm:^0.6.2"
+    "@highstate/common": "npm:^0.7.0"
+    "@highstate/contract": "npm:^0.7.0"
+    "@highstate/pulumi": "npm:^0.7.0"
     "@muhlba91/pulumi-proxmoxve": "npm:^6.17.1"
   peerDependencies:
     "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/cc604db44867bb4f3f6ad8d26abc3ca4807b3d867b4a20e1fb811316cbe038d0d1fbd47befba618579b5d4aa033a33f5cff891daa24c461d09e03d90b7e1feaa
+  checksum: 10c0/afe87121fe0b8f7bccaa365d6f9ce781a732b9b37315f00262a9bd6c13704324ab5555bff311d533838e9f6c6a2f199fc997807f265978ef7b80d383b065f5d5
   languageName: node
   linkType: hard
 
-"@highstate/pulumi@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/pulumi@npm:0.6.2"
+"@highstate/pulumi@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/pulumi@npm:0.7.0"
   dependencies:
-    "@highstate/contract": "npm:^0.6.2"
+    "@highstate/contract": "npm:^0.7.0"
     "@pulumi/pulumi": "npm:^3.152.0"
     "@sinclair/typebox": "npm:^0.34.11"
     ajv: "npm:^8.17.1"
     import-meta-resolve: "npm:^4.1.0"
     remeda: "npm:^2.21.0"
-  checksum: 10c0/f9073f8caf7a08763a1cf641af496ca37224aa4a995ee89c4c764b0ce90df8c76cfabf21afd0c062a7d389799aa2589e4998fdf54bc2662d18658dfe2987038e
+  checksum: 10c0/cb4ff3740f509772c647614f73a4a4e67115af68e20476e411fd953aefd8efbcf6b179f72b7f6cb304ea4414cdb1cdfbd7394700da8029e126a838bc535aedde
   languageName: node
   linkType: hard
 
-"@highstate/restic@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/restic@npm:0.6.2"
+"@highstate/restic@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/restic@npm:0.7.0"
   dependencies:
-    "@highstate/common": "npm:^0.6.2"
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
+    "@highstate/common": "npm:^0.7.0"
+    "@highstate/k8s": "npm:^0.7.0"
+    "@highstate/pulumi": "npm:^0.7.0"
     "@pulumi/kubernetes": "npm:^4.18.0"
   peerDependencies:
     "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/1bcd50de1b3fcc14d16c120cbab3e1a43f42a071276d29156fc5deb6a6b8a18c8b2afa5e8c99adec60643f418c3640caeb187fa665cd3ab8b43e0e8d34a36103
+  checksum: 10c0/f847496e3450765199d6f0bd92970807e5b41393eb898b9296eaba7db875c1e04abba2dcac09931008c0bdc7a005ab6634404d0ee14978f738bd4f11797303e5
   languageName: node
   linkType: hard
 
-"@highstate/talos@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/talos@npm:0.6.2"
+"@highstate/talos@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/talos@npm:0.7.0"
   dependencies:
-    "@highstate/cilium": "npm:^0.6.2"
-    "@highstate/common": "npm:^0.6.2"
-    "@highstate/contract": "npm:^0.6.2"
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
+    "@highstate/cilium": "npm:^0.7.0"
+    "@highstate/common": "npm:^0.7.0"
+    "@highstate/contract": "npm:^0.7.0"
+    "@highstate/k8s": "npm:^0.7.0"
+    "@highstate/pulumi": "npm:^0.7.0"
     "@pulumi/command": "npm:^1.0.2"
     "@pulumiverse/talos": "npm:^0.4.1"
   peerDependencies:
     "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/9c75f72f9deaaad66d7a935650446a20ce8596c616b813f54b4575b80a4d1cac2b2a2703d93e3413ebcf0fad6ad8d6025cb61b98a37eccfdd9e2d2cbce4a4ae7
+  checksum: 10c0/46b955e7a76b8ff4c90fa976cdec532dee11e38c8252725c5157a370a9d1428337b65ca2b03d2784f9d790c13350c7d9f7fe042aaea6399767896a7b6f6a0f66
   languageName: node
   linkType: hard
 
-"@highstate/traefik@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/traefik@npm:0.6.2"
+"@highstate/wireguard@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@highstate/wireguard@npm:0.7.0"
   dependencies:
-    "@highstate/common": "npm:^0.6.2"
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
-    "@pulumi/kubernetes": "npm:^4.18.0"
-  peerDependencies:
-    "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/c1d601216c8d57a5352b2d1df84d93f44f941a6b4ba94adc994e91cc55a9445fa5b323dc13c411ed6cb3ba5b7e3af410e8ad368a7c8b4609876a8021b28a512a
-  languageName: node
-  linkType: hard
-
-"@highstate/vaultwarden@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/vaultwarden@npm:0.6.2"
-  dependencies:
-    "@highstate/common": "npm:^0.6.2"
-    "@highstate/contract": "npm:^0.6.2"
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/mariadb": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
-    "@pulumi/kubernetes": "npm:^4.18.0"
-  peerDependencies:
-    "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/7097ce1ee47d5adf7ec78f1ee278f52f828ae0f65ed6a9f29a3a57e06cd008ff12d55aa2bff1e8e4c7eb424555f6ac1f1367e5bd267ae19e324efd3d1e07ade8
-  languageName: node
-  linkType: hard
-
-"@highstate/wireguard@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@highstate/wireguard@npm:0.6.2"
-  dependencies:
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
+    "@highstate/k8s": "npm:^0.7.0"
+    "@highstate/pulumi": "npm:^0.7.0"
     "@noble/curves": "npm:^1.8.0"
     "@pulumi/kubernetes": "npm:^4.18.0"
   peerDependencies:
     "@highstate/library": "workspace:^0.4.4"
-  checksum: 10c0/afe2555b7c95f257ad5992deb4c8575d9c8bfc093f25b5368b08c1f7264a72cfe37cfd1b9b9a1d1194599de5b2ad73b671ad4ea2e921007e20e36dc6171bae0a
+  checksum: 10c0/622c97e97f44fc7662c4d6dc846b40d4489332e0089c4ae05b68299fb42ea411ad82c06964d7955c7a36bfa8d11bfa90e0a2309c20d1770277f0553a269b3f5c
   languageName: node
   linkType: hard
 
@@ -1985,6 +1935,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:^11.0.1":
+  version: 11.0.1
+  resolution: "glob@npm:11.0.1"
+  dependencies:
+    foreground-child: "npm:^3.1.0"
+    jackspeak: "npm:^4.0.1"
+    minimatch: "npm:^10.0.0"
+    minipass: "npm:^7.1.2"
+    package-json-from-dist: "npm:^1.0.0"
+    path-scurry: "npm:^2.0.0"
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 10c0/2b32588be52e9e90f914c7d8dec32f3144b81b84054b0f70e9adfebf37cd7014570489f2a79d21f7801b9a4bd4cca94f426966bfd00fb64a5b705cfe10da3a03
+  languageName: node
+  linkType: hard
+
 "google-protobuf@npm:^3.5.0":
   version: 3.21.4
   resolution: "google-protobuf@npm:3.21.4"
@@ -2165,22 +2131,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "infra@workspace:."
   dependencies:
-    "@highstate/cilium": "npm:^0.6.2"
-    "@highstate/cli": "npm:^0.6.2"
-    "@highstate/common": "npm:^0.6.2"
-    "@highstate/contract": "npm:^0.6.2"
-    "@highstate/designer": "npm:^0.6.2"
-    "@highstate/k8s": "npm:^0.6.2"
-    "@highstate/kubernetes-dashboard": "npm:^0.6.2"
-    "@highstate/library": "npm:^0.6.2"
-    "@highstate/mariadb": "npm:^0.6.2"
-    "@highstate/postgresql": "npm:^0.6.2"
-    "@highstate/proxmox": "npm:^0.6.2"
-    "@highstate/pulumi": "npm:^0.6.2"
-    "@highstate/talos": "npm:^0.6.2"
-    "@highstate/traefik": "npm:^0.6.2"
-    "@highstate/vaultwarden": "npm:^0.6.2"
-    "@highstate/wireguard": "npm:^0.6.2"
+    "@highstate/apps": "npm:^0.7.0"
+    "@highstate/cilium": "npm:^0.7.0"
+    "@highstate/cli": "npm:^0.7.0"
+    "@highstate/common": "npm:^0.7.0"
+    "@highstate/contract": "npm:^0.7.0"
+    "@highstate/designer": "npm:^0.7.0"
+    "@highstate/k8s": "npm:^0.7.0"
+    "@highstate/library": "npm:^0.7.0"
+    "@highstate/proxmox": "npm:^0.7.0"
+    "@highstate/pulumi": "npm:^0.7.0"
+    "@highstate/talos": "npm:^0.7.0"
+    "@highstate/wireguard": "npm:^0.7.0"
     "@pulumi/kubernetes": "npm:^4.22.0"
     "@pulumi/pulumi": "npm:^3.156.0"
     classic-level: "npm:^2.0.0"
@@ -2281,6 +2243,15 @@ __metadata:
     "@pkgjs/parseargs":
       optional: true
   checksum: 10c0/6acc10d139eaefdbe04d2f679e6191b3abf073f111edf10b1de5302c97ec93fffeb2fdd8681ed17f16268aa9dd4f8c588ed9d1d3bffbbfa6e8bf897cbb3149b9
+  languageName: node
+  linkType: hard
+
+"jackspeak@npm:^4.0.1":
+  version: 4.1.0
+  resolution: "jackspeak@npm:4.1.0"
+  dependencies:
+    "@isaacs/cliui": "npm:^8.0.2"
+  checksum: 10c0/08a6a24a366c90b83aef3ad6ec41dcaaa65428ffab8d80bc7172add0fbb8b134a34f415ad288b2a6fbd406526e9a62abdb40ed4f399fbe00cb45c44056d4dce0
   languageName: node
   linkType: hard
 
@@ -2424,6 +2395,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lru-cache@npm:^11.0.0":
+  version: 11.0.2
+  resolution: "lru-cache@npm:11.0.2"
+  checksum: 10c0/c993b8e06ead0b24b969c1dbb5b301716aed66e320e9014a80012f5febe280b438f28ff50046b2c55ff404e889351ccb332ff91f8dd175a21f5eae80e3fb155f
+  languageName: node
+  linkType: hard
+
 "make-fetch-happen@npm:^13.0.0, make-fetch-happen@npm:^13.0.1":
   version: 13.0.1
   resolution: "make-fetch-happen@npm:13.0.1"
@@ -2540,6 +2518,15 @@ __metadata:
   version: 3.1.0
   resolution: "mimic-response@npm:3.1.0"
   checksum: 10c0/0d6f07ce6e03e9e4445bee655202153bdb8a98d67ee8dc965ac140900d7a2688343e6b4c9a72cfc9ef2f7944dfd76eef4ab2482eb7b293a68b84916bac735362
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:^10.0.0":
+  version: 10.0.1
+  resolution: "minimatch@npm:10.0.1"
+  dependencies:
+    brace-expansion: "npm:^2.0.1"
+  checksum: 10c0/e6c29a81fe83e1877ad51348306be2e8aeca18c88fdee7a99df44322314279e15799e41d7cb274e4e8bb0b451a3bc622d6182e157dfa1717d6cda75e9cd8cd5d
   languageName: node
   linkType: hard
 
@@ -3097,6 +3084,16 @@ __metadata:
     lru-cache: "npm:^10.2.0"
     minipass: "npm:^5.0.0 || ^6.0.2 || ^7.0.0"
   checksum: 10c0/32a13711a2a505616ae1cc1b5076801e453e7aae6ac40ab55b388bb91b9d0547a52f5aaceff710ea400205f18691120d4431e520afbe4266b836fadede15872d
+  languageName: node
+  linkType: hard
+
+"path-scurry@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "path-scurry@npm:2.0.0"
+  dependencies:
+    lru-cache: "npm:^11.0.0"
+    minipass: "npm:^7.1.2"
+  checksum: 10c0/3da4adedaa8e7ef8d6dc4f35a0ff8f05a9b4d8365f2b28047752b62d4c1ad73eec21e37b1579ef2d075920157856a3b52ae8309c480a6f1a8bbe06ff8e52b33c
   languageName: node
   linkType: hard
 
